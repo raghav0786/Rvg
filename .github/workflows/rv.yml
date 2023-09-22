@@ -1,9 +1,14 @@
 name: My Workflow 
 on: 
 push: 
-branches:- main jobs: 
+branches
+- main 
+jobs: 
 build: 
-runs-on: 
-ubuntu-latest steps:- name: Checkout code uses:
-actions/checkout@v2 - name: Run a script 
-run: | echo "Hello, GitHub Actions!"
+runs-on: ubuntu-latest 
+steps:- name: Checkout code 
+uses:
+actions/checkout@v2
+- name: Run a script 
+run: | 
+echo "Hello, GitHub Actions!"
